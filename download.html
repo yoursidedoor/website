@@ -246,12 +246,26 @@
       </li>
     </ol>
 
+    <section id="windows" aria-labelledby="windows-title">
+      <h2 id="windows-title">Sidedoor for Windows (beta)</h2>
+      <p><a class="dl" id="dl-windows" href="https://github.com/yoursidedoor/sidedoor/releases/latest/download/Sidedoor-windows-x64-setup.exe"><b>Download for Windows</b> <span>Windows 10 or 11, 64-bit</span></a></p>
+      <h3>Windows says "Windows protected your PC"</h3>
+      <p>Sidedoor for Windows is a new beta app and is not code-signed yet, so Windows shows this message the first time you open the installer. To continue:</p>
+      <ol>
+        <li>Click <b>More info</b>.</li>
+        <li>Click <b>Run anyway</b>.</li>
+      </ol>
+      <p>Want to check that your download is the real one? Its SHA256 checksum is:</p>
+      <p><code id="windows-sha256">__WIN_SHA256__</code></p>
+      <p>To compare, open PowerShell in your Downloads folder and run <code>Get-FileHash .\Sidedoor-windows-x64-setup.exe</code>. The two values should match exactly.</p>
+    </section>
+
     <details>
       <summary>Something not working?</summary>
       <div class="help">
         <p><b>"It says it can't be opened."</b><br>Move Sidedoor into your Applications folder first. Then right-click it (or hold Control and click) and choose <b>Open</b>.</p>
         <p><b>"Nothing happens when I open it."</b><br>Sidedoor may already be running. Look for its icon in the menu bar at the top of your screen, or in the Dock.</p>
-        <p><b>"I have a Windows computer."</b><br>Windows is coming soon.</p>
+        <p><b>"I have a Windows computer."</b><br>See <a href="#windows">Sidedoor for Windows (beta)</a> above.</p>
         <p>Still stuck? Email <a href="mailto:support@yoursidedoor.com">support@yoursidedoor.com</a> and we will help.</p>
       </div>
     </details>
