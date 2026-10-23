@@ -1,1 +1,5 @@
-{"latest": "0.0.1", "download_url": "https://github.com/yoursidedoor/sidedoor/releases/tag/v0.0.1", "notes": "First beta: signed and notarized macOS app."}
+{
+  "latest": "0.0.2",
+  "download_url": "https://yoursidedoor.com/download.html",
+  "notes": "Background browser stays out of your way; invitations go out around the clock; keys in your Mac's Keychain."
+}
