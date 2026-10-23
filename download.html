@@ -72,7 +72,7 @@
   .sub { color: var(--muted); max-width: 40em; margin: 0 0 30px; }
 
   .intro { padding: 40px 0 48px; }
-  .choices { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; max-width: 760px; }
+  .choices { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 1000px; }
   .dl {
     position: relative; display: flex; flex-direction: column; gap: 4px;
     padding: 22px 24px; border-radius: 14px; text-decoration: none;
@@ -152,8 +152,8 @@
 
 <main>
 <div class="wrap intro">
-  <h1>Download Sidedoor for Mac</h1>
-  <p class="lede">Pick the button that matches your Mac. Not sure which one? See "Which Mac do I have?" just below.</p>
+  <h1>Download Sidedoor</h1>
+  <p class="lede">Pick the button that matches your computer. On a Mac and not sure which one? See "Which Mac do I have?" just below.</p>
 
   <div class="choices">
     <a class="dl" id="dl-apple" href="https://github.com/yoursidedoor/sidedoor/releases/latest/download/Sidedoor-mac-apple-silicon.zip">
@@ -168,8 +168,15 @@
       <span>Older Macs, macOS 11 or later</span>
       <span class="get">Download</span>
     </a>
+    <a class="dl" id="dl-windows" href="https://github.com/yoursidedoor/sidedoor/releases/latest/download/Sidedoor-windows-x64-setup.exe">
+      <span class="badge" aria-hidden="true">Likely your computer</span>
+      <b>Windows (beta)</b>
+      <span>Windows 10 or 11, 64-bit</span>
+      <span class="get">Download</span>
+    </a>
   </div>
   <p class="fine" id="guess" aria-live="polite"></p>
+  <p class="fine">On Windows? See <a href="#windows">installing on Windows</a> below.</p>
 
   <details>
     <summary>Which Mac do I have?</summary>
@@ -247,8 +254,7 @@
     </ol>
 
     <section id="windows" aria-labelledby="windows-title">
-      <h2 id="windows-title">Sidedoor for Windows (beta)</h2>
-      <p><a class="dl" id="dl-windows" href="https://github.com/yoursidedoor/sidedoor/releases/latest/download/Sidedoor-windows-x64-setup.exe"><b>Download for Windows</b> <span>Windows 10 or 11, 64-bit</span></a></p>
+      <h2 id="windows-title">Installing on Windows</h2>
       <h3>Install</h3>
       <ol>
         <li>Open the downloaded <b>Sidedoor-windows-x64-setup.exe</b>.</li>
@@ -282,14 +288,18 @@
 </div>
 <script>
 (function () {
-  // Only highlights a button. Both buttons always work.
+  // Only highlights a button. Every button always works.
   function mark(kind) {
-    var el = document.getElementById(kind === "arm" ? "dl-apple" : "dl-intel");
+    var el = document.getElementById(kind === "win" ? "dl-windows" : kind === "arm" ? "dl-apple" : "dl-intel");
     if (!el) return;
     el.classList.add("likely");
     var note = document.getElementById("guess");
-    if (note) note.textContent = "We think this is a Mac with " + (kind === "arm" ? "an Apple chip" : "an Intel chip") + ". If you're not sure, check below.";
+    if (note) note.textContent = kind === "win" ? "We think this is a Windows computer." :
+      "We think this is a Mac with " + (kind === "arm" ? "an Apple chip" : "an Intel chip") + ". If you're not sure, check below.";
   }
+  var isWindows = /Windows/i.test(navigator.userAgent || "") ||
+    (navigator.userAgentData && /Windows/i.test(navigator.userAgentData.platform || ""));
+  if (isWindows) { mark("win"); return; }
   function fromWebGL() {
     try {
       var c = document.createElement("canvas");
