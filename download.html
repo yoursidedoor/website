@@ -73,6 +73,7 @@
 
   .intro { padding: 40px 0 48px; }
   .choices { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 1000px; }
+  .choices.one { grid-template-columns: 1fr; max-width: 420px; }
   .dl {
     position: relative; display: flex; flex-direction: column; gap: 4px;
     padding: 22px 24px; border-radius: 14px; text-decoration: none;
@@ -153,30 +154,29 @@
 <main>
 <div class="wrap intro">
   <h1>Download Sidedoor</h1>
-  <p class="lede">Pick the button that matches your computer. On a Mac and not sure which one? See "Which Mac do I have?" just below.</p>
+  <p class="lede">Pick your computer. The next page has the download and the install steps for it. On a Mac and not sure which one? See "Which Mac do I have?" just below.</p>
 
   <div class="choices">
-    <a class="dl" id="dl-apple" href="https://github.com/yoursidedoor/sidedoor/releases/latest/download/Sidedoor-mac-apple-silicon.zip">
+    <a class="dl" id="dl-apple" href="/download-mac-apple-chip.html">
       <span class="badge" aria-hidden="true">Likely your Mac</span>
       <b>Mac with Apple chip</b>
       <span>M1 or newer</span>
-      <span class="get">Download</span>
+      <span class="get">Choose &rarr;</span>
     </a>
-    <a class="dl" id="dl-intel" href="https://github.com/yoursidedoor/sidedoor/releases/latest/download/Sidedoor-mac-intel.zip">
+    <a class="dl" id="dl-intel" href="/download-mac-intel.html">
       <span class="badge" aria-hidden="true">Likely your Mac</span>
       <b>Mac with Intel chip (beta)</b>
       <span>Older Macs, macOS 11 or later</span>
-      <span class="get">Download</span>
+      <span class="get">Choose &rarr;</span>
     </a>
-    <a class="dl" id="dl-windows" href="https://github.com/yoursidedoor/sidedoor/releases/latest/download/Sidedoor-windows-x64-setup.exe">
+    <a class="dl" id="dl-windows" href="/download-windows.html">
       <span class="badge" aria-hidden="true">Likely your computer</span>
       <b>Windows (beta)</b>
       <span>Windows 10 or 11, 64-bit</span>
-      <span class="get">Download</span>
+      <span class="get">Choose &rarr;</span>
     </a>
   </div>
   <p class="fine" id="guess" aria-live="polite"></p>
-  <p class="fine">Install steps: <a href="#mac">Mac</a> · <a href="#windows">Windows</a></p>
 
   <details>
     <summary>Which Mac do I have?</summary>
@@ -192,92 +192,6 @@
   <p class="fine">Free 14-day trial, no charge until it ends. <a href="https://buy.stripe.com/fZu7sM0004Gy9yq1jMeIw00">Start your free trial</a></p>
 </div>
 
-<section id="mac" aria-labelledby="install-title">
-  <div class="wrap">
-    <h2 id="install-title">Install on Mac</h2>
-    <p class="sub">For the two Mac downloads (Apple chip or Intel). No technical skills needed. It takes a couple of minutes, then setup guides you through the rest.</p>
-    <ol class="install">
-      <li>
-        <svg viewBox="0 0 220 120" role="img" aria-label="A downloaded file turning into a Sidedoor folder">
-          <rect class="i-bg" width="220" height="120" rx="12"/>
-          <rect class="i-card" x="22" y="22" width="56" height="72" rx="6"/>
-          <path class="i-mute" d="M50 30 v8 M50 44 v8 M50 58 v8"/>
-          <rect class="i-soft" x="42" y="70" width="16" height="12" rx="2"/>
-          <path class="i-accl" d="M92 58 H126 M118 50 L126 58 L118 66"/>
-          <path class="i-card" d="M140 36 h22 l8 8 h30 v46 a4 4 0 0 1 -4 4 h-52 a4 4 0 0 1 -4 -4 z"/>
-          <text class="i-txt" x="170" y="108" text-anchor="middle">Sidedoor</text>
-        </svg>
-        <h3>Open the download</h3>
-        <p>Open the file you downloaded. It is in your <b>Downloads</b> folder. It unzips into <b>Sidedoor</b>.</p>
-      </li>
-      <li>
-        <svg viewBox="0 0 220 120" role="img" aria-label="Dragging Sidedoor into the Applications folder">
-          <rect class="i-bg" width="220" height="120" rx="12"/>
-          <rect class="i-card" x="22" y="34" width="44" height="44" rx="10"/>
-          <rect class="i-door" x="38" y="44" width="14" height="24" rx="2"/>
-          <text class="i-txt" x="44" y="96" text-anchor="middle">Sidedoor</text>
-          <path class="i-accl" d="M78 56 Q110 30 140 52 M131 48 L140 52 L136 61"/>
-          <path class="i-card" d="M148 34 h20 l7 7 h27 v40 a4 4 0 0 1 -4 4 h-46 a4 4 0 0 1 -4 -4 z"/>
-          <text class="i-txt" x="174" y="104" text-anchor="middle">Applications</text>
-        </svg>
-        <h3>Move it to Applications</h3>
-        <p>Drag <b>Sidedoor</b> into your <b>Applications</b> folder.</p>
-      </li>
-      <li>
-        <svg viewBox="0 0 220 120" role="img" aria-label="A message asking if you are sure you want to open it, with an Open button">
-          <rect class="i-bg" width="220" height="120" rx="12"/>
-          <rect class="i-card" x="30" y="16" width="160" height="88" rx="10"/>
-          <path class="i-mute" d="M46 36 H150 M46 48 H130"/>
-          <rect class="i-card" x="56" y="70" width="56" height="22" rx="6"/>
-          <text class="i-txt" x="84" y="85" text-anchor="middle">Cancel</text>
-          <rect class="i-acc" x="120" y="70" width="56" height="22" rx="6"/>
-          <text class="i-txtw" x="148" y="85" text-anchor="middle">Open</text>
-        </svg>
-        <h3>Open Sidedoor</h3>
-        <p>Open Sidedoor from <b>Applications</b> or <b>Launchpad</b>.</p>
-        <p>If your Mac asks "Are you sure you want to open it?", click <b>Open</b>. Sidedoor is verified by Apple.</p>
-      </li>
-      <li>
-        <svg viewBox="0 0 220 120" role="img" aria-label="Setup open in a web browser with a checklist">
-          <rect class="i-bg" width="220" height="120" rx="12"/>
-          <rect class="i-card" x="24" y="14" width="172" height="92" rx="10"/>
-          <path class="i-line" d="M24 32 H196"/>
-          <circle class="i-soft" cx="36" cy="23" r="3"/><circle class="i-soft" cx="46" cy="23" r="3"/><circle class="i-soft" cx="56" cy="23" r="3"/>
-          <path class="i-accl" d="M42 50 l5 5 l9 -10 M42 72 l5 5 l9 -10"/>
-          <path class="i-mute" d="M66 50 H160 M66 72 H146 M66 94 H130"/>
-          <rect class="i-soft" x="42" y="87" width="14" height="14" rx="3"/>
-        </svg>
-        <h3>Finish setup</h3>
-        <p>Sidedoor's setup opens in your web browser and walks you through the rest. It takes about 15 minutes.</p>
-        <p>Have your <b>license key</b> ready. It is in your welcome email.</p>
-      </li>
-    </ol>
-
-    <section id="windows" aria-labelledby="windows-title">
-      <h2 id="windows-title">Install on Windows</h2>
-      <p class="sub">For the Windows download. It takes a couple of minutes, then setup guides you through the rest.</p>
-      <ol>
-        <li>Open the downloaded <b>Sidedoor-windows-x64-setup.exe</b>.</li>
-        <li>Follow the installer. No administrator password is needed.</li>
-        <li>Open <b>Sidedoor</b> from the Start menu. Setup opens in your browser.</li>
-      </ol>
-      <p>Sidedoor for Windows is signed by David Omofonma. Because it is new, Windows may still show "Windows protected your PC" for a while; if it does, click <b>More info</b>, check the publisher says David Omofonma, then click <b>Run anyway</b>.</p>
-      <p>The installer's SHA256 checksum is:</p>
-      <p><code id="windows-sha256">__WIN_SHA256__</code></p>
-    </section>
-
-    <details>
-      <summary>Something not working?</summary>
-      <div class="help">
-        <p><b>Mac: "It says it can't be opened."</b><br>Move Sidedoor into your Applications folder first. Then right-click it (or hold Control and click) and choose <b>Open</b>.</p>
-        <p><b>Mac: "Nothing happens when I open it."</b><br>Sidedoor may already be running. Look for its icon in the menu bar at the top of your screen, or in the Dock.</p>
-        <p><b>Windows: "Windows protected your PC."</b><br>Click <b>More info</b>, check the publisher says David Omofonma, then click <b>Run anyway</b>.</p>
-        <p><b>Windows: "Nothing happens when I open it."</b><br>Sidedoor may already be running. Look for its icon in the bottom-right corner of the taskbar (click the <b>^</b> arrow to see hidden icons).</p>
-        <p>Still stuck? Email <a href="mailto:support@yoursidedoor.com">support@yoursidedoor.com</a> and we will help.</p>
-      </div>
-    </details>
-  </div>
-</section>
 </main>
 
 <div class="wrap">
