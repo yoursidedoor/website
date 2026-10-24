@@ -1,15 +1,15 @@
 {
-  "latest": "0.0.10",
+  "latest": "0.1.0",
   "download_url": "https://yoursidedoor.com/download.html",
-  "notes": "Sidedoor asks you on Approvals when an application needs an answer only you can give; email confirmations from any webmail; Health shows when work is paused; every list pages through everything.",
+  "notes": "Sidedoor's browser now works out of sight; a redesigned dashboard; every count matches what it counts; closed applications show their real reason; a new icon.",
   "mac": {
     "arm64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.0.10/Sidedoor-mac-apple-silicon.zip",
-      "sha256": "7613f259ce8a229ab4ec11834f5b728594ddd00b31023b4d74ab5c33f733615e"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.1.0/Sidedoor-mac-apple-silicon.zip",
+      "sha256": "84d948799263ba82d8e399b41a6c4f860167a442fed2f0ce64705b16438a0801"
     },
     "x86_64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.0.10/Sidedoor-mac-intel.zip",
-      "sha256": "10b34d0b1583e96ebdd06020fa8677bad7eb2a785279d0ceac9fa9eb30ce39d0"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.1.0/Sidedoor-mac-intel.zip",
+      "sha256": "d87eaba7c894b8aa95834434b0a8ee7c5dc1ca5ed3ea6307190a285f9fb3ea17"
     }
   }
 }
