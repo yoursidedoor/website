@@ -1,15 +1,15 @@
 {
-  "latest": "0.0.9",
+  "latest": "0.0.10",
   "download_url": "https://yoursidedoor.com/download.html",
-  "notes": "Failures show the real reason with a link to its log; running out of credits or usage pauses work instead of failing it; on Mac, Update now installs new versions for you.",
+  "notes": "Sidedoor asks you on Approvals when an application needs an answer only you can give; email confirmations from any webmail; Health shows when work is paused; every list pages through everything.",
   "mac": {
     "arm64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.0.9/Sidedoor-mac-apple-silicon.zip",
-      "sha256": "743303a36e22c3fb83f3b59531a0a140e8a79daf03a60037489b9b15ad8cf662"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.0.10/Sidedoor-mac-apple-silicon.zip",
+      "sha256": "7613f259ce8a229ab4ec11834f5b728594ddd00b31023b4d74ab5c33f733615e"
     },
     "x86_64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.0.9/Sidedoor-mac-intel.zip",
-      "sha256": "7f8773fc532cb8796dad89199f248c77cada9b729f745a9511af3543cb637f80"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.0.10/Sidedoor-mac-intel.zip",
+      "sha256": "10b34d0b1583e96ebdd06020fa8677bad7eb2a785279d0ceac9fa9eb30ce39d0"
     }
   }
 }
