@@ -1,5 +1,15 @@
 {
-  "latest": "0.0.8",
+  "latest": "0.0.9",
   "download_url": "https://yoursidedoor.com/download.html",
-  "notes": "Finds Codex wherever it is installed; outreach notes never cut off mid-sentence; Windows shows its version correctly."
+  "notes": "Failures show the real reason with a link to its log; running out of credits or usage pauses work instead of failing it; on Mac, Update now installs new versions for you.",
+  "mac": {
+    "arm64": {
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.0.9/Sidedoor-mac-apple-silicon.zip",
+      "sha256": "743303a36e22c3fb83f3b59531a0a140e8a79daf03a60037489b9b15ad8cf662"
+    },
+    "x86_64": {
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.0.9/Sidedoor-mac-intel.zip",
+      "sha256": "7f8773fc532cb8796dad89199f248c77cada9b729f745a9511af3543cb637f80"
+    }
+  }
 }
