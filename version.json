@@ -1,15 +1,15 @@
 {
-  "latest": "0.1.0",
+  "latest": "0.2.0",
   "download_url": "https://yoursidedoor.com/download.html",
-  "notes": "Sidedoor's browser now works out of sight; a redesigned dashboard; every count matches what it counts; closed applications show their real reason; a new icon.",
+  "notes": "Review mode now holds everything that goes out, with editable applications; questions use the form's own controls; choose which résumé is uploaded; email support in one click; a more colorful Overview.",
   "mac": {
     "arm64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.1.0/Sidedoor-mac-apple-silicon.zip",
-      "sha256": "84d948799263ba82d8e399b41a6c4f860167a442fed2f0ce64705b16438a0801"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.2.0/Sidedoor-mac-apple-silicon.zip",
+      "sha256": "207476a58ced6a8922a6a176fcfb2c61424b112bdda04b351f0078f01caff312"
     },
     "x86_64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.1.0/Sidedoor-mac-intel.zip",
-      "sha256": "d87eaba7c894b8aa95834434b0a8ee7c5dc1ca5ed3ea6307190a285f9fb3ea17"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.2.0/Sidedoor-mac-intel.zip",
+      "sha256": "d574fb9ca321de944039273ebb65971877eef3186613728c2a3effd827cddebc"
     }
   }
 }
