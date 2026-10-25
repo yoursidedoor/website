@@ -1,15 +1,15 @@
 {
-  "latest": "0.2.0",
+  "latest": "0.2.1",
   "download_url": "https://yoursidedoor.com/download.html",
-  "notes": "Review mode now holds everything that goes out, with editable applications; questions use the form's own controls; choose which résumé is uploaded; email support in one click; a more colorful Overview.",
+  "notes": "Roles research rules out are closed as not eligible instead of being applied to, and form reading builds on research's verdict.",
   "mac": {
     "arm64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.2.0/Sidedoor-mac-apple-silicon.zip",
-      "sha256": "207476a58ced6a8922a6a176fcfb2c61424b112bdda04b351f0078f01caff312"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.2.1/Sidedoor-mac-apple-silicon.zip",
+      "sha256": "769dfe578f5062fb0bf858585c6f235c4da56926634d796d8017605f3227017a"
     },
     "x86_64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.2.0/Sidedoor-mac-intel.zip",
-      "sha256": "d574fb9ca321de944039273ebb65971877eef3186613728c2a3effd827cddebc"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.2.1/Sidedoor-mac-intel.zip",
+      "sha256": "7ec8bcaff2a798526e1c751cb17d9ad90b2f80d19e0206f83af8b4dfe4129384"
     }
   }
 }
