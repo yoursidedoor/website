@@ -1,15 +1,15 @@
 {
-  "latest": "0.2.1",
+  "latest": "0.2.2",
   "download_url": "https://yoursidedoor.com/download.html",
-  "notes": "Roles research rules out are closed as not eligible instead of being applied to, and form reading builds on research's verdict.",
+  "notes": "Sidedoor keeps running after an update, Email support drafts in the background and waits for sign-in, long forms no longer run out of steps, and Failures lists given-up applications.",
   "mac": {
     "arm64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.2.1/Sidedoor-mac-apple-silicon.zip",
-      "sha256": "769dfe578f5062fb0bf858585c6f235c4da56926634d796d8017605f3227017a"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.2.2/Sidedoor-mac-apple-silicon.zip",
+      "sha256": "5042bb59127c4fca3a95cf65dd2425cc122a105a0f220201e36e4658a9e5fe0f"
     },
     "x86_64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.2.1/Sidedoor-mac-intel.zip",
-      "sha256": "7ec8bcaff2a798526e1c751cb17d9ad90b2f80d19e0206f83af8b4dfe4129384"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.2.2/Sidedoor-mac-intel.zip",
+      "sha256": "a56a12caaab2301eb3715e6fb6b0eb2b5abc318e319771bf77c8bbee842748e2"
     }
   }
 }
