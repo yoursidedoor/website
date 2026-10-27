@@ -227,5 +227,24 @@
     <span><a href="mailto:support@yoursidedoor.com">support@yoursidedoor.com</a></span>
   </footer>
 </div>
+  <!-- Cloudflare Web Analytics -->
+  <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5bdfa8ad57b84df68e37cffce8a46a9a"}'></script>
+  <!-- End Cloudflare Web Analytics -->
+  <!-- Pass the visitor's channel (utm_*) through to Stripe so each trial shows where it came from. -->
+  <script>
+  (function () {
+    var q = new URLSearchParams(location.search), keep = [], ref = [];
+    ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"].forEach(function (k) {
+      var v = q.get(k); if (v && /^[A-Za-z0-9_-]{1,150}$/.test(v)) { keep.push(k + "=" + v); if (k !== "utm_term") ref.push(v); }
+    });
+    try { if (keep.length) sessionStorage.setItem("sd_utm", keep.join("&")); else keep = (sessionStorage.getItem("sd_utm") || "").split("&").filter(Boolean); } catch (e) {}
+    if (!keep.length) return;
+    if (!ref.length) keep.forEach(function (kv) { if (kv.indexOf("utm_term=") !== 0) ref.push(kv.split("=")[1]); });
+    var extra = keep.join("&") + "&client_reference_id=" + ref.join("_").slice(0, 200);
+    document.querySelectorAll('a[href^="https://buy.stripe.com/"]').forEach(function (a) {
+      a.href += (a.href.indexOf("?") === -1 ? "?" : "&") + extra;
+    });
+  })();
+  </script>
 </body>
 </html>
