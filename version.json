@@ -1,15 +1,15 @@
 {
-  "latest": "0.2.2",
+  "latest": "0.2.3",
   "download_url": "https://yoursidedoor.com/download.html",
-  "notes": "Sidedoor keeps running after an update, Email support drafts in the background and waits for sign-in, long forms no longer run out of steps, and Failures lists given-up applications.",
+  "notes": "A lone confirmation checkbox is now ticked, answers the form keeps refusing become a card for you after 3 tries and stop after 7, and Failures and History show every try.",
   "mac": {
     "arm64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.2.2/Sidedoor-mac-apple-silicon.zip",
-      "sha256": "5042bb59127c4fca3a95cf65dd2425cc122a105a0f220201e36e4658a9e5fe0f"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.2.3/Sidedoor-mac-apple-silicon.zip",
+      "sha256": "9aa7410a5a34ea9fa5e90ceecf64657c13e649e25fa104c3d2cb67aee703a08f"
     },
     "x86_64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.2.2/Sidedoor-mac-intel.zip",
-      "sha256": "a56a12caaab2301eb3715e6fb6b0eb2b5abc318e319771bf77c8bbee842748e2"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.2.3/Sidedoor-mac-intel.zip",
+      "sha256": "ccffe098c32e386658bc62b0712144475c7ef5b926954dc92632ca8a36602702"
     }
   }
 }
