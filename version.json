@@ -1,15 +1,15 @@
 {
-  "latest": "0.2.3",
+  "latest": "0.3.0",
   "download_url": "https://yoursidedoor.com/download.html",
-  "notes": "A lone confirmation checkbox is now ticked, answers the form keeps refusing become a card for you after 3 tries and stop after 7, and Failures and History show every try.",
+  "notes": "Choose Codex, Claude or Antigravity to run Sidedoor. Writing no longer needs Codex, invitations work without LinkedIn Premium (the note follows after they accept), and research keeps what it finds if a session is cut short.",
   "mac": {
     "arm64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.2.3/Sidedoor-mac-apple-silicon.zip",
-      "sha256": "9aa7410a5a34ea9fa5e90ceecf64657c13e649e25fa104c3d2cb67aee703a08f"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.3.0/Sidedoor-mac-apple-silicon.zip",
+      "sha256": "a71ece78e7c1293e64e555d99a080af4a5946edae2ca05fdeb262029638c5227"
     },
     "x86_64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.2.3/Sidedoor-mac-intel.zip",
-      "sha256": "ccffe098c32e386658bc62b0712144475c7ef5b926954dc92632ca8a36602702"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.3.0/Sidedoor-mac-intel.zip",
+      "sha256": "183ea609a15f7c46a80710d136f9edc87bde96cbedfc38fab5a116aef0d3a355"
     }
   }
 }
