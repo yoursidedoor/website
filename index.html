@@ -127,6 +127,8 @@
     .steps { grid-template-columns: 1fr; }
     .hero { padding-top: 24px; }
   }
+  .onboard { margin:14px 0 0; color:var(--ink); font-size:16px; }
+  .onboard a { color:var(--accent); }
 </style>
 </head>
 <body>
@@ -153,7 +155,8 @@
         <a class="btn btn-primary" href="https://buy.stripe.com/fZu7sM0004Gy9yq1jMeIw00">Start 14-day free trial</a>
         <a class="btn btn-ghost" href="/download.html">Download</a>
       </div>
-      <p class="fine">For Mac (Apple chip or Intel) and Windows. Runs on your computer; your data stays there.</p>
+      <p class="fine" style="margin-bottom:0">For Mac (Apple chip or Intel) and Windows. Runs on your computer; your data stays there.</p>
+      <p class="onboard"><b>Want a hand getting set up? <a href="https://calendar.app.google/xSR9B8UsznfpNrPP7" target="_blank" rel="noopener">Book a free 30-minute onboarding call</a> with David, the engineer who built Your Sidedoor, on Google Meet.</b></p>
     </div>
     <div class="doorcard" aria-label="Example of a day in Your Sidedoor">
       <h3>This morning</h3>
@@ -234,11 +237,13 @@
       <div class="card"><b>What does it actually do?</b><p>It runs your job search with you: finds roles, finds the people inside who can refer you, writes and sends personal outreach, follows up, tailors your resume for application systems, applies, and tracks it all in one dashboard.</p></div>
       <div class="card"><b>Does it send messages on its own?</b><p>Only if you let it. Switch to Review mode and nothing goes out until you approve it. You can change this any time in Settings.</p></div>
       <div class="card"><b>Where does my data live?</b><p>On your computer. Your resume, profile, drafts and history are never stored on our servers. Outreach passes through our relay for delivery and is not kept. Drafting uses your own AI model key, so prompts go to the provider you choose. <a href="/security.html">Full security details</a>.</p></div>
+      <div class="card"><b>How is it kept secure?</b><p>Both apps are signed by a verified developer: Apple Developer ID on Mac and Microsoft Trusted Signing on Windows. Your keys sit in your computer's Keychain or Credential Manager, the dashboard only opens on your own computer, and updates install only when you approve them. <a href="/security.html">See how Your Sidedoor protects you</a>.</p></div>
       <div class="card"><b>What do I need?</b><p>A Mac or Windows computer, about 15 minutes, and the accounts the setup guide walks you through, including your own AI model key.</p></div>
       <div class="card"><b>How much does it cost?</b><p>14 days free, then $44.99 a month. Cancel any time from the billing link in your welcome email; first-month refunds within 14 days, no questions.</p></div>
       <div class="card"><b>Can I see the code?</b><p>Yes. The source is <a href="https://github.com/yoursidedoor/sidedoor">on GitHub</a> under the Business Source License.</p></div>
       <div class="card"><b>Does it guarantee a job?</b><p>No tool can. It gets you in front of the right people faster; the interviews are yours to win.</p></div>
-      <div class="card"><b>Found a bug?</b><p>Report it on <a href="https://github.com/yoursidedoor/sidedoor/issues">GitHub Issues</a>. Setup is self-serve; the guide covers every step.</p></div>
+      <div class="card"><b>Can someone help me set up?</b><p>Yes. <a href="https://calendar.app.google/xSR9B8UsznfpNrPP7" target="_blank" rel="noopener">Book a free 30-minute onboarding call</a> on Google Meet and David will walk you through install, keys and your first search.</p></div>
+      <div class="card"><b>Found a bug?</b><p>Report it on <a href="https://github.com/yoursidedoor/sidedoor/issues">GitHub Issues</a>. The setup guide covers every step, and an onboarding call is there if you want one.</p></div>
     </div>
   </div>
 </section>
