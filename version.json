@@ -1,15 +1,15 @@
 {
-  "latest": "0.3.0",
+  "latest": "0.4.0",
   "download_url": "https://yoursidedoor.com/download.html",
-  "notes": "Choose Codex, Claude or Antigravity to run Sidedoor. Writing no longer needs Codex, invitations work without LinkedIn Premium (the note follows after they accept), and research keeps what it finds if a session is cut short.",
+  "notes": "Setup works on every Mac and PC, including Intel Macs and Macs back to macOS 13.5. The license key now comes first, usage limits show when Sidedoor picks up again, and Windows installs of Claude, Antigravity and Codex work.",
   "mac": {
     "arm64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.3.0/Sidedoor-mac-apple-silicon.zip",
-      "sha256": "a71ece78e7c1293e64e555d99a080af4a5946edae2ca05fdeb262029638c5227"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.4.0/Sidedoor-mac-apple-silicon.zip",
+      "sha256": "3bccf9a2ce138f57a17ace4b74726422de9d4e256f0b821cf4290b5156f021a4"
     },
     "x86_64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.3.0/Sidedoor-mac-intel.zip",
-      "sha256": "183ea609a15f7c46a80710d136f9edc87bde96cbedfc38fab5a116aef0d3a355"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.4.0/Sidedoor-mac-intel.zip",
+      "sha256": "6dd2f2ee55f6ec743193eef6a662859c5dba15c374e026fea5521d66840afd1c"
     }
   }
 }
