@@ -218,6 +218,9 @@
   }
   h1 em { font-style: normal; color: var(--accent); }
   .eyebrow { font-size: 14px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--door); margin: 0 0 14px; }
+  .founder { display: flex; align-items: center; gap: 18px; margin-bottom: 8px; }
+  .founder img { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; border: 1px solid var(--line); flex: none; }
+  .founder h2 { margin: 0; }
   .lede { font-size: 19px; color: var(--muted); max-width: 34em; margin: 0 0 30px; }
   .cta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
   .btn {
@@ -340,7 +343,7 @@
 <section id="story">
   <div class="wrap grid2">
     <div>
-      <h2>Why I built this</h2>
+      <div class="founder"><img src="/brand/david.jpg" alt="David Omofonma, who built Your Sidedoor" width="96" height="96" loading="lazy"><h2>Why I built this</h2></div>
       <p class="sub">I'm David, a Senior Software Engineer. A few months ago I was sending thousands of applications a month through an auto-apply tool and hearing almost nothing back. The interviews I did get came a different way: someone inside the company said "I'll refer you."</p>
       <p class="sub">Doing that well for every company took hours a week, so I built an agent to do it with me. It took me from silence to interviews to an offer. Now it's yours to try. <a href="https://www.linkedin.com/in/david-omofonma-44bba5135/">Find me on LinkedIn</a>.</p>
     </div>
@@ -431,7 +434,7 @@
 
 <div class="wrap">
   <footer>
-    <span>© 2026 Your Sidedoor</span>
+    <span>© 2026 Your Sidedoor · Built by David Omofonma</span>
     <span><a href="/security.html">Security</a> · <a href="https://github.com/yoursidedoor/sidedoor">Source code on GitHub</a> · <a href="https://github.com/yoursidedoor/sidedoor/blob/main/LICENSE">License (BSL 1.1)</a></span>
     <span><a href="mailto:support@yoursidedoor.com">support@yoursidedoor.com</a></span>
   </footer>
