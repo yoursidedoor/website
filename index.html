@@ -4,7 +4,164 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Your Sidedoor — the referral-first job search agent</title>
-<meta name="description" content="Your Sidedoor finds the people inside the companies you want, starts the conversation, and keeps it going, so your application arrives with a referral instead of into a pile.">
+<meta name="description" content="A desktop job search agent that finds the people inside the companies you want, writes to them for you and follows up, so you apply with a referral.">
+<link rel="canonical" href="https://yoursidedoor.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Your Sidedoor">
+<meta property="og:url" content="https://yoursidedoor.com/">
+<meta property="og:title" content="Your Sidedoor — the referral-first job search agent">
+<meta property="og:description" content="A desktop job search agent that finds the people inside the companies you want, writes to them for you and follows up, so you apply with a referral.">
+<meta property="og:image" content="https://yoursidedoor.com/brand/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Your Sidedoor: Skip the pile. Walk in through the side door.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Your Sidedoor — the referral-first job search agent">
+<meta name="twitter:description" content="A desktop job search agent that finds the people inside the companies you want, writes to them for you and follows up, so you apply with a referral.">
+<meta name="twitter:image" content="https://yoursidedoor.com/brand/og-image.png">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://yoursidedoor.com/#org",
+   "name": "Your Sidedoor",
+   "url": "https://yoursidedoor.com/",
+   "logo": "https://yoursidedoor.com/brand/yoursidedoor-apple-touch-180.png",
+   "email": "support@yoursidedoor.com",
+   "founder": {
+    "@type": "Person",
+    "name": "David Omofonma",
+    "jobTitle": "Senior Software Engineer"
+   },
+   "sameAs": [
+    "https://github.com/yoursidedoor",
+    "https://getyoursidedoor.substack.com"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://yoursidedoor.com/#website",
+   "url": "https://yoursidedoor.com/",
+   "name": "Your Sidedoor",
+   "publisher": {
+    "@id": "https://yoursidedoor.com/#org"
+   }
+  },
+  {
+   "@type": "SoftwareApplication",
+   "name": "Your Sidedoor",
+   "url": "https://yoursidedoor.com/",
+   "applicationCategory": "BusinessApplication",
+   "operatingSystem": "macOS, Windows",
+   "description": "A desktop job search agent that finds the people inside the companies you want, writes to them for you and follows up, so you apply with a referral.",
+   "publisher": {
+    "@id": "https://yoursidedoor.com/#org"
+   },
+   "offers": {
+    "@type": "Offer",
+    "price": "44.99",
+    "priceCurrency": "USD",
+    "description": "14-day free trial, then $44.99 per month. Cancel any time."
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What does it actually do?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It runs your job search with you: finds roles, finds the people inside who can refer you, writes and sends personal outreach, follows up, tailors your resume for application systems, applies, and tracks it all in one dashboard."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does it send messages on its own?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Only if you let it. Switch to Review mode and nothing goes out until you approve it. You can change this any time in Settings."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Where does my data live?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "On your computer. Your resume, profile, drafts and history are never stored on our servers. Outreach passes through our relay for delivery and is not kept. Drafting uses your own AI model key, so prompts go to the provider you choose. Full security details."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Will my outreach read as AI slop?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No form letters. Each note is short, written for one person, and built only from what's actually in your resume. It's checked before it goes out so nothing is invented, nobody gets the same message twice, and in Review mode you approve every word."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How is it kept secure?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Both apps are signed by a verified developer: Apple Developer ID on Mac and Microsoft Trusted Signing on Windows. Your keys sit in your computer's Keychain or Credential Manager, the dashboard only opens on your own computer, and updates install only when you approve them. See how Your Sidedoor protects you."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What do I need?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A Mac or Windows computer, about 15 minutes, and the accounts the setup guide walks you through, including your own AI model key."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much does it cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "14 days free, then $44.99 a month. Cancel any time from the billing link in your welcome email; first-month refunds within 14 days, no questions."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I see the code?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The source is on GitHub under the Business Source License."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does it guarantee a job?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No tool can. It gets you in front of the right people faster; the interviews are yours to win."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can someone help me set up?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Book a free 30-minute onboarding call on Google Meet and David will walk you through install, keys and your first search."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Found a bug?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Report it on GitHub Issues or email support@yoursidedoor.com."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/brand/yoursidedoor-icon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/brand/yoursidedoor-apple-touch-180.png">
@@ -60,6 +217,7 @@
     margin: 0 0 22px;
   }
   h1 em { font-style: normal; color: var(--accent); }
+  .eyebrow { font-size: 14px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--door); margin: 0 0 14px; }
   .lede { font-size: 19px; color: var(--muted); max-width: 34em; margin: 0 0 30px; }
   .cta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
   .btn {
@@ -149,6 +307,7 @@
 
   <div class="hero">
     <div>
+      <p class="eyebrow">The referral-first job search agent · Mac and Windows</p>
       <h1>Skip the pile.<br>Walk in through <em>the side door.</em></h1>
       <p class="lede">Your Sidedoor finds the engineers and managers inside the companies you want, starts the conversation for you, and keeps it going, so your application arrives with someone on the inside instead of landing in a stack of 800.</p>
       <div class="cta">
@@ -237,6 +396,7 @@
       <div class="card"><b>What does it actually do?</b><p>It runs your job search with you: finds roles, finds the people inside who can refer you, writes and sends personal outreach, follows up, tailors your resume for application systems, applies, and tracks it all in one dashboard.</p></div>
       <div class="card"><b>Does it send messages on its own?</b><p>Only if you let it. Switch to Review mode and nothing goes out until you approve it. You can change this any time in Settings.</p></div>
       <div class="card"><b>Where does my data live?</b><p>On your computer. Your resume, profile, drafts and history are never stored on our servers. Outreach passes through our relay for delivery and is not kept. Drafting uses your own AI model key, so prompts go to the provider you choose. <a href="/security.html">Full security details</a>.</p></div>
+      <div class="card"><b>Will my outreach read as AI slop?</b><p>No form letters. Each note is short, written for one person, and built only from what's actually in your resume. It's checked before it goes out so nothing is invented, nobody gets the same message twice, and in Review mode you approve every word.</p></div>
       <div class="card"><b>How is it kept secure?</b><p>Both apps are signed by a verified developer: Apple Developer ID on Mac and Microsoft Trusted Signing on Windows. Your keys sit in your computer's Keychain or Credential Manager, the dashboard only opens on your own computer, and updates install only when you approve them. <a href="/security.html">See how Your Sidedoor protects you</a>.</p></div>
       <div class="card"><b>What do I need?</b><p>A Mac or Windows computer, about 15 minutes, and the accounts the setup guide walks you through, including your own AI model key.</p></div>
       <div class="card"><b>How much does it cost?</b><p>14 days free, then $44.99 a month. Cancel any time from the billing link in your welcome email; first-month refunds within 14 days, no questions.</p></div>
@@ -256,6 +416,7 @@
     </div>
     <div class="plan">
       <div class="amt">$44.99 <small>/ month</small></div>
+      <p class="fine">Cheaper tools send applications into the pile. This one does the part they skip: finding the people inside each company who can refer you, and writing to each of them personally.</p>
       <ul>
         <li>Daily research and champion finding</li>
         <li>Personal outreach, replies and follow-ups</li>
