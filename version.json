@@ -1,15 +1,15 @@
 {
-  "latest": "0.4.0",
+  "latest": "0.4.1",
   "download_url": "https://yoursidedoor.com/download.html",
-  "notes": "Setup works on every Mac and PC, including Intel Macs and Macs back to macOS 13.5. The license key now comes first, usage limits show when Sidedoor picks up again, and Windows installs of Claude, Antigravity and Codex work.",
+  "notes": "Your free trial now starts when you first open Sidedoor. A clear Add a card step when a trial ends or a payment fails, and approved messages no longer get stuck after a short outage.",
   "mac": {
     "arm64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.4.0/Sidedoor-mac-apple-silicon.zip",
-      "sha256": "3bccf9a2ce138f57a17ace4b74726422de9d4e256f0b821cf4290b5156f021a4"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.4.1/Sidedoor-mac-apple-silicon.zip",
+      "sha256": "2f3056addf1df1f0f7c454f8ae1fec87b8d471e3e30b2c78f4becbb37d8867e5"
     },
     "x86_64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.4.0/Sidedoor-mac-intel.zip",
-      "sha256": "6dd2f2ee55f6ec743193eef6a662859c5dba15c374e026fea5521d66840afd1c"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.4.1/Sidedoor-mac-intel.zip",
+      "sha256": "e1e7da44346190a844f97df83b398da98344303dc85c91b356d8d9b20c498aa5"
     }
   }
 }
