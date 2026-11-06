@@ -198,7 +198,7 @@
       <tr><td>Drafts and message history</td><td>A folder on your computer</td><td>You. Messages pass through our relay when they're sent; the relay doesn't store them.</td></tr>
       <tr><td>AI key and license key</td><td>Keychain (Mac) or Credential Manager (Windows)</td><td>You. They're never written to our logs.</td></tr>
       <tr><td>Your license</td><td>Our relay, as a one-way hash of the key</td><td>Us: whether your subscription is active, and up to two device IDs (salted hashes, not your hardware serial).</td></tr>
-      <tr><td>Progress counts (only if you turn on "Share anonymous progress counts" in Settings)</td><td>Our relay, next to the one-way hash of your license key</td><td>Us: three dates and nothing else: the day you finished setup, the day your first outreach message was drafted, and the day your first outreach was sent. Off by default; turning it off stops sending them.</td></tr>
+      <tr><td>Progress counts (only if you turn on "Share anonymous progress counts" in Settings)</td><td>Our relay, next to the one-way hash of your license key</td><td>Us: three dates and nothing else: the day you finished setup, the day your first outreach message was drafted, and the day your first outreach was sent. Off by default; turning it off stops sending them and deletes the dates we stored.</td></tr>
       <tr><td>Your linked messaging account</td><td>Our relay, as an account ID</td><td>Us: the ID only, so each request can be limited to your own account.</td></tr>
       <tr><td>Payment details</td><td>Stripe</td><td>Stripe. Your card never touches our servers.</td></tr>
     </table>
