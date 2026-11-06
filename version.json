@@ -1,15 +1,15 @@
 {
-  "latest": "0.4.1",
+  "latest": "0.4.2",
   "download_url": "https://yoursidedoor.com/download.html",
-  "notes": "Your free trial now starts when you first open Sidedoor. A clear Add a card step when a trial ends or a payment fails, and approved messages no longer get stuck after a short outage.",
+  "notes": "Sidedoor now checks LinkedIn before it sends anything again, so nothing goes out twice, and every message shows where it ended up. Plus Windows fixes.",
   "mac": {
     "arm64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.4.1/Sidedoor-mac-apple-silicon.zip",
-      "sha256": "2f3056addf1df1f0f7c454f8ae1fec87b8d471e3e30b2c78f4becbb37d8867e5"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.4.2/Sidedoor-mac-apple-silicon.zip",
+      "sha256": "ebcf0b3c4de589575167044c1923772fa4e5697caefd56df6882ae62c2588e95"
     },
     "x86_64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.4.1/Sidedoor-mac-intel.zip",
-      "sha256": "e1e7da44346190a844f97df83b398da98344303dc85c91b356d8d9b20c498aa5"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.4.2/Sidedoor-mac-intel.zip",
+      "sha256": "f1a4b7d806b715d811ee1a471a70503548507159b1d686f3888b469fe1713fa9"
     }
   }
 }
