@@ -1,15 +1,15 @@
 {
-  "latest": "0.4.2",
+  "latest": "0.4.3",
   "download_url": "https://yoursidedoor.com/download.html",
-  "notes": "Sidedoor now checks LinkedIn before it sends anything again, so nothing goes out twice, and every message shows where it ended up. Plus Windows fixes.",
+  "notes": "Setup is simpler, with fewer buttons and clearer steps, and Settings now matches it. Your trial length now shows correctly.",
   "mac": {
     "arm64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.4.2/Sidedoor-mac-apple-silicon.zip",
-      "sha256": "ebcf0b3c4de589575167044c1923772fa4e5697caefd56df6882ae62c2588e95"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.4.3/Sidedoor-mac-apple-silicon.zip",
+      "sha256": "aac5886eda7a37d36162911c68c1d5b504d4ee1651f48d2080b90ed6108f00a6"
     },
     "x86_64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.4.2/Sidedoor-mac-intel.zip",
-      "sha256": "f1a4b7d806b715d811ee1a471a70503548507159b1d686f3888b469fe1713fa9"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.4.3/Sidedoor-mac-intel.zip",
+      "sha256": "54cb8fa0510f7cfd040c64638a8d78f52bdb45b91844e49a27aafe8eb38e9b94"
     }
   }
 }
