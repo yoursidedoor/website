@@ -500,7 +500,8 @@
        Every Stripe link also gets a client_reference_id that records the click, in the form
        cta_<device>_<page>_<link number>_<utm_source>_<utm_content>_<utm_medium>_<utm_campaign>
        (device: m = phone or tablet, d = desktop; "none" when a value is missing). Opening a Stripe link creates
-       a Checkout Session, so every click shows up in Stripe, including people who never finish checkout. -->
+       a Checkout Session, so every click shows up in Stripe, including people who never finish checkout.
+       The page also sends anonymous counts of how far visitors get (no cookie, no id). -->
   <script>
   (function () {
     var q = new URLSearchParams(location.search), keep = [], u = {};
@@ -521,6 +522,28 @@
         part(u.utm_medium, 30), part(u.utm_campaign, 50)].join("_").slice(0, 200);
       links[n].href += (links[n].href.indexOf("?") === -1 ? "?" : "&") + (keep.length ? keep.join("&") + "&" : "") + "client_reference_id=" + ref;
     }
+    // Anonymous counts: page opened, video reached, pricing reached, trial button tapped. Each once per page view.
+    var counted = {};
+    function count(event, link) {
+      var key = event + (link || "");
+      if (counted[key]) return;
+      counted[key] = true;
+      try {
+        navigator.sendBeacon("https://yoursidedoor-relay.fly.dev/visit", JSON.stringify({ event: event, link: link,
+          device: dev === "m" ? "phone" : "desktop", source: part(u.utm_source, 40), medium: part(u.utm_medium, 30) }));
+      } catch (e) {}
+    }
+    function tap(i) { links[i].addEventListener("click", function () { count("trial_tap", i + 1); }); }
+    for (n = 0; n < links.length; n++) tap(n);
+    count("page_opened");
+    if ("IntersectionObserver" in window) [["see", "reached_video"], ["pricing", "reached_pricing"]].forEach(function (pair) {
+      var section = document.getElementById(pair[0]);
+      if (!section) return;
+      var watch = new IntersectionObserver(function (entries) {
+        for (var i = 0; i < entries.length; i++) if (entries[i].isIntersecting) { count(pair[1]); watch.disconnect(); }
+      });
+      watch.observe(section);
+    });
   })();
   </script>
 </body>
