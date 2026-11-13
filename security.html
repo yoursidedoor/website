@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Security and privacy — how Your Sidedoor protects you</title>
+<title>Security and privacy: how Your Sidedoor protects you</title>
 <meta name="description" content="What stays on your computer, what passes through our relay, and what we never see: how Your Sidedoor protects your data, your keys and your accounts.">
 <link rel="canonical" href="https://yoursidedoor.com/security.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Your Sidedoor">
 <meta property="og:url" content="https://yoursidedoor.com/security.html">
-<meta property="og:title" content="Security and privacy — how Your Sidedoor protects you">
+<meta property="og:title" content="Security and privacy: how Your Sidedoor protects you">
 <meta property="og:description" content="What stays on your computer, what passes through our relay, and what we never see: how Your Sidedoor protects your data, your keys and your accounts.">
 <meta property="og:image" content="https://yoursidedoor.com/brand/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Your Sidedoor: Skip the pile. Walk in through the side door.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Security and privacy — how Your Sidedoor protects you">
+<meta name="twitter:title" content="Security and privacy: how Your Sidedoor protects you">
 <meta name="twitter:description" content="What stays on your computer, what passes through our relay, and what we never see: how Your Sidedoor protects your data, your keys and your accounts.">
 <meta name="twitter:image" content="https://yoursidedoor.com/brand/og-image.png">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -182,7 +182,7 @@
     <div class="sec-list">
       <div class="card"><b>Your data lives on your computer</b><p>Your resume, profile, drafts, message history and applications are stored in a folder on your own computer. There is no Sidedoor account and no cloud copy of your search.</p></div>
       <div class="card"><b>Your keys are in your computer's vault</b><p>Your AI key and license key are kept in macOS Keychain or Windows Credential Manager, not in plain files, so they stay out of backups and synced folders.</p></div>
-      <div class="card"><b>We don't keep your messages</b><p>Outreach passes through our relay on its way out and is not stored. The relay's log records only which kind of request it was and whether it worked.</p></div>
+      <div class="card"><b>We don't keep your messages</b><p>Outreach passes through our relay on its way out and is not stored.</p></div>
       <div class="card"><b>We never see your drafts being written</b><p>Drafting uses your own AI key, so your resume and drafts go straight from your computer to the AI provider you choose, not to us.</p></div>
     </div>
   </div>
@@ -191,15 +191,14 @@
 <section>
   <div class="wrap">
     <h2>What stays with you, and what reaches us</h2>
-    <p class="sub">Every piece of data Sidedoor handles, where it lives, and who can see it.</p>
+    <p class="sub">Where your data lives and who can see it.</p>
     <table class="facts">
       <tr><th>Data</th><th>Where it lives</th><th>Who can see it</th></tr>
-      <tr><td>Resume, profile, answers</td><td>A folder on your computer</td><td>You. It goes to your chosen AI provider only when a draft or answer is written.</td></tr>
-      <tr><td>Drafts and message history</td><td>A folder on your computer</td><td>You. Messages pass through our relay when they're sent; the relay doesn't store them.</td></tr>
-      <tr><td>AI key and license key</td><td>Keychain (Mac) or Credential Manager (Windows)</td><td>You. They're never written to our logs.</td></tr>
-      <tr><td>Your license</td><td>Our relay, as a one-way hash of the key</td><td>Us: whether your subscription is active, and up to two device IDs (salted hashes, not your hardware serial).</td></tr>
-      <tr><td>Progress counts (only if you turn on "Share anonymous progress counts" in Settings)</td><td>Our relay, next to the one-way hash of your license key</td><td>Us: three dates and nothing else: the day you finished setup, the day your first outreach message was drafted, and the day your first outreach was sent. Off by default; turning it off stops sending them and deletes the dates we stored.</td></tr>
-      <tr><td>Your linked messaging account</td><td>Our relay, as an account ID</td><td>Us: the ID only, so each request can be limited to your own account.</td></tr>
+      <tr><td>Resume, profile, answers</td><td>Your computer</td><td>You. It goes to your chosen AI provider only when a draft or answer is written.</td></tr>
+      <tr><td>Drafts and message history</td><td>Your computer</td><td>You. Messages pass through our relay when they're sent and are not stored.</td></tr>
+      <tr><td>AI key and license key</td><td>Your computer's vault</td><td>You.</td></tr>
+      <tr><td>Your license</td><td>Our relay</td><td>Us: whether your subscription is active and which devices use it.</td></tr>
+      <tr><td>Progress counts, only if you turn them on in Settings</td><td>Our relay</td><td>Us: three dates. Off by default.</td></tr>
       <tr><td>Payment details</td><td>Stripe</td><td>Stripe. Your card never touches our servers.</td></tr>
     </table>
   </div>
@@ -209,11 +208,10 @@
   <div class="wrap">
     <h2>How it's protected</h2>
     <div class="sec-list">
-      <div class="card"><b>A dashboard only your computer can open</b><p>The dashboard listens only on your own machine (127.0.0.1), never on your network. It needs a secret token unique to your install, and it rejects requests that come from other websites, so a web page you visit can't reach it or act through it.</p></div>
-      <div class="card"><b>Each account is walled off</b><p>Every request to our relay is checked against your license, and the relay itself fills in which account the request is for. One user can't read or send through anyone else's account, even by crafting their own requests.</p></div>
-      <div class="card"><b>Licenses that can't be faked</b><p>License confirmations are cryptographically signed (Ed25519) and checked by the app, so they can't be forged. If you go offline, Sidedoor keeps working for up to 72 hours on the last confirmation. The daily license check sends your license key, a device ID (a salted hash) and the app's version number, so we can tell you when an update is needed; the relay doesn't store the version.</p></div>
-      <div class="card"><b>Encrypted in transit</b><p>Everything Sidedoor sends over the internet (to our relay, your AI provider, Stripe and our update check) goes over HTTPS.</p></div>
-      <div class="card"><b>No tracking inside the app</b><p>The app contains no analytics or crash-reporting services. The only usage information it can send is the three progress dates above, and only after you turn that on. Our website uses Cloudflare Web Analytics, which sets no cookies. "Report a problem" copies a summary to your clipboard with keys, emails, names, links and personal details removed; nothing is sent until you paste it yourself.</p></div>
+      <div class="card"><b>A dashboard only your computer can open</b><p>The dashboard opens only on your own computer, never on your network, and a web page you visit can't reach it.</p></div>
+      <div class="card"><b>Each account is walled off</b><p>One user can't read or send through anyone else's account.</p></div>
+      <div class="card"><b>Encrypted in transit</b><p>Everything Sidedoor sends over the internet is encrypted.</p></div>
+      <div class="card"><b>No tracking inside the app</b><p>The app contains no analytics or crash-reporting services. Our website counts visits without cookies.</p></div>
       <div class="card"><b>You choose how much it does on its own</b><p>In Review mode, no message goes out until you approve it. You can switch modes any time in Settings.</p></div>
       <div class="card"><b>Open code</b><p>The full source is public on <a href="https://github.com/yoursidedoor/sidedoor">GitHub</a> under the Business Source License, so anyone can read exactly what it does.</p></div>
     </div>
@@ -223,13 +221,7 @@
 <section id="signing">
   <div class="wrap">
     <h2>Signed by a verified developer</h2>
-    <p class="sub">Both apps carry a code signature that ties them to a publisher whose identity Apple and Microsoft have checked. If anyone altered the app after it was built, the signature would break and your computer would warn you.</p>
-    <div class="sec-list">
-      <div class="card"><b>Mac: Apple Developer ID, notarized</b><p>The Mac app is signed with an Apple Developer ID certificate issued to David Omofonma (Team ID WX74LWM685), with Apple's hardened runtime and a secure timestamp. Before each release it is notarized: Apple scans it for malicious software and issues a ticket, which is attached to the app so your Mac can confirm it even offline.</p><p><b>Check it yourself:</b> in Terminal, run <code>spctl -a -vv /Applications/Sidedoor.app</code>. It should say <em>accepted, source=Notarized Developer ID</em>.</p></div>
-      <div class="card"><b>Windows: Microsoft Trusted Signing</b><p>The Windows installer and app are signed through Microsoft's Trusted Signing service, which issues certificates only after verifying the publisher's legal identity. The signature names David Omofonma, chains to Microsoft's Identity Verification root, and is timestamped by Microsoft, so it stays valid after its short-lived certificate rotates.</p><p><b>Check it yourself:</b> right-click the installer, choose <em>Properties</em>, then <em>Digital Signatures</em>; the signer is David Omofonma. Because Sidedoor is new, Windows SmartScreen may still show a notice until the app builds up a download history; the signature is what proves who made it.</p></div>
-      <div class="card"><b>Checksums on every download</b><p>Each download on our <a href="https://github.com/yoursidedoor/sidedoor/releases">GitHub releases page</a> has a matching <code>.sha256</code> file, so you can confirm the file you downloaded is exactly the one we published.</p></div>
-      <div class="card"><b>Updates you approve</b><p>Sidedoor never updates itself without asking. It checks a small version file on yoursidedoor.com and shows a banner. On a Mac, "Update now" replaces the app only after checking the download's fingerprint, Apple's signature and notarization, and that it comes from the same developer as the copy you have. On Windows you download the new installer yourself.</p></div>
-    </div>
+    <p class="sub">Both apps are signed by a verified developer and checked by Apple and Microsoft. If anyone altered the app, your computer would warn you. Sidedoor never updates itself without asking.</p>
   </div>
 </section>
 
@@ -251,7 +243,7 @@
 <section>
   <div class="wrap">
     <h2>What's still up to you</h2>
-    <p class="note">The Keychain and Credential Manager keep your keys out of backups and synced folders, but other software running under your own computer account can still read them, as it can any file you own. Keep your operating system up to date, turn on FileVault (Mac) or BitLocker (Windows), and only install software you trust. Uninstalling Sidedoor and deleting its folder removes your data from your computer; to cancel billing, use Settings, Manage subscription, in the app.</p>
+    <p class="note">Keep your computer up to date and only install software you trust.</p>
   </div>
 </section>
 
@@ -259,7 +251,7 @@
   <div class="wrap">
     <h2>Found a security issue?</h2>
     <p class="note">Please email <a href="mailto:support@yoursidedoor.com?subject=Security">support@yoursidedoor.com</a> with "Security" in the subject, and don't post it publicly until we've had a chance to fix it. Thank you.</p>
-    <p class="note" style="margin-top:14px">Last reviewed against the source code: October 27, 2026.</p>
+    <p class="note" style="margin-top:14px">Last reviewed against the source code: November 12, 2026.</p>
   </div>
 </section>
 
