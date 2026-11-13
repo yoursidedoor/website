@@ -64,7 +64,7 @@
     "@type": "Offer",
     "price": "37.00",
     "priceCurrency": "USD",
-    "description": "14-day free trial, no card needed. Then $37 per month. Cancel any time."
+    "description": "14-day free trial. Then $37 per month. Cancel any time."
    }
   },
   {
@@ -123,7 +123,7 @@
      "name": "How much does it cost?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "14 days free with no card needed, then $37 a month if you keep it. Cancel any time from Settings, Manage subscription, in the app; first-month refunds within 14 days, no questions."
+      "text": "14 days free, then $37 a month if you keep it. Cancel any time from Settings, Manage subscription, in the app; first-month refunds within 14 days, no questions."
      }
     },
     {
@@ -290,8 +290,26 @@
     .steps { grid-template-columns: 1fr; }
     .hero { padding-top: 24px; }
   }
-  .onboard { margin:14px 0 0; color:var(--ink); font-size:16px; }
-  .onboard a { color:var(--accent); }
+  .proof { display:flex; gap:10px; align-items:center; margin:16px 0 0; font-size:15px; color:var(--ink); }
+  .proof img { width:40px; height:40px; border-radius:50%; object-fit:cover; border:1px solid var(--line); flex:none; }
+  .midcta { text-align:center; margin:28px 0 0; }
+  .ph { display:none; }
+  .sticky { display:none; }
+  @media (max-width: 860px) {
+    header { padding: 12px 0; }
+    .brand { font-size: 1.05rem; }
+    .brand img { width: 32px; height: 32px; }
+    .hero { padding-top: 8px; padding-bottom: 40px; }
+    h1 { font-size: 34px; margin-bottom: 14px; }
+    .eyebrow { font-size: 12px; margin-bottom: 10px; }
+    .lede { font-size: 17px; margin-bottom: 18px; }
+    .desk { display: none !important; }
+    .ph { display: inline; }
+    .cta .btn-primary, .midcta .btn { display:block; width:100%; text-align:center; }
+    .sticky:not([hidden]) { display:block; position:fixed; left:0; right:0; bottom:0; z-index:5; padding:10px 16px calc(10px + env(safe-area-inset-bottom)); background:var(--surface); border-top:1px solid var(--line); }
+    .sticky a { display:block; text-align:center; }
+    body { padding-bottom: 76px; }
+  }
 </style>
 </head>
 <body>
@@ -312,18 +330,18 @@
 
   <div class="hero">
     <div>
-      <p class="eyebrow">The referral-first job search agent · Mac and Windows</p>
-      <h1>Skip the pile.<br>Walk in through <em>the side door.</em></h1>
-      <p class="lede">Referrals are 7% of applicants but about <a href="https://theundercoverrecruiter.com/infographic-employee-referrals-hire" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px">40% of hires</a>. Your Sidedoor finds the people inside the companies you want and helps you become one of the 7%. It starts the conversation for you, and keeps it going, so your application arrives with someone on the inside instead of landing in a stack of 800.</p>
+      <p class="eyebrow">Job search agent for Mac and Windows</p>
+      <h1>Cold applications are a lottery. <em>Referrals aren't.</em></h1>
+      <p class="lede">Your Sidedoor finds the people inside the companies you want, writes to them for you and follows up, so your application arrives with someone on the inside instead of landing in a stack of 800.</p>
       <div class="cta">
-        <a class="btn btn-primary" href="https://buy.stripe.com/fZu7sM0004Gy9yq1jMeIw00">Start 14-day free trial</a>
-        <a class="btn btn-ghost" href="/download.html">Download</a>
+        <a class="btn btn-primary" id="cta-top" href="https://buy.stripe.com/fZu7sM0004Gy9yq1jMeIw00">Start 14-day free trial</a>
+        <a class="btn btn-ghost desk" href="#see">Watch 60 seconds</a>
       </div>
-      <p class="fine" style="margin-bottom:0">On your phone? Start here and we'll email the download link for your computer.<br>No card needed to start. For Mac (Apple chip or Intel) and Windows. Runs on your computer; your data stays there.</p>
-      <p class="onboard"><b>Want a hand getting set up? <a href="https://calendar.app.google/xSR9B8UsznfpNrPP7" target="_blank" rel="noopener">Book a free 30-minute onboarding call</a> with David, the engineer who built Your Sidedoor.</b></p>
+      <p class="fine" style="margin-bottom:0"><b>Free for 14 days. Cancel any time.</b><br><span class="ph">On your phone? Start here and we email the download link. Your 14 days begin when you first open it on your computer.</span><span class="desk">Runs on your Mac or Windows computer. Your data stays there.</span></p>
+      <p class="proof"><img src="/brand/david.jpg" alt="" width="40" height="40"><span>Built by David, a Senior Software Engineer who used it to go from silence to interviews to an offer.</span></p>
     </div>
-    <div class="doorcard" aria-label="Example of a day in Your Sidedoor">
-      <h3>This morning</h3>
+    <div class="doorcard desk" aria-label="Example of a day in Your Sidedoor">
+      <h3>An example morning</h3>
       <div class="row"><i class="dot on"></i><div><b>Researched 20 companies</b><span>Found 3 open roles that match, and the people who'd sit next to you.</span></div></div>
       <div class="row"><i class="dot on"></i><div><b>Sent 4 connection notes</b><span>Each one written for that person, reviewed by you or sent automatically.</span></div></div>
       <div class="row"><i class="dot on"></i><div><b>2 replies, 1 referral offer</b><span>Drafted your responses and lined up the follow-up.</span></div></div>
@@ -339,34 +357,31 @@
       <source src="https://yoursidedoor-static.fly.storage.tigris.dev/demo.mp4" type="video/mp4">
     </video>
     <p class="src" style="text-align:center;margin-top:10px">A real dashboard, one evening in October 2026. Names blurred.</p>
+    <p class="midcta"><a class="btn btn-primary" href="https://buy.stripe.com/fZu7sM0004Gy9yq1jMeIw00">Start 14-day free trial</a></p>
   </div>
 </section>
 
 <section id="story">
-  <div class="wrap grid2">
+  <div class="wrap">
     <div>
       <div class="founder"><img src="/brand/david.jpg" alt="David Omofonma, who built Your Sidedoor" width="96" height="96" loading="lazy"><h2>Why I built this</h2></div>
       <p class="sub">I'm David, a Senior Software Engineer. A few months ago I was sending thousands of applications a month through an auto-apply tool and hearing almost nothing back. The interviews I did get came a different way: someone inside the company said "I'll refer you."</p>
       <p class="sub">Doing that well for every company took hours a week, so I built an agent to do it with me. It took me from silence to interviews to an offer. Now it's yours to try. <a href="https://www.linkedin.com/in/david-omofonma-44bba5135/">Find me on LinkedIn</a>.</p>
-    </div>
-    <div class="card" id="waitlist">
-      <b>Not ready to start a trial?</b>
-      <p>Follow along as Sidedoor grows: short notes on job searching through the side door, and first word when something new ships.</p>
-      <p style="margin-top:12px"><a class="btn btn-ghost" href="https://getyoursidedoor.substack.com/subscribe?utm_source=website&utm_medium=owned&utm_campaign=newsletter">Subscribe to the newsletter</a></p>
     </div>
   </div>
 </section>
 
 <section id="how">
   <div class="wrap">
-    <h2>An agent that networks the way you would, if you had the time.</h2>
-    <p class="sub">It runs quietly on your machine every day. You set the targets and how much it's allowed to do on its own.</p>
+    <h2>Skip the pile. Walk in through the side door.</h2>
+    <p class="sub">An agent that networks the way you would, if you had the time. It runs quietly on your machine every day. You set the targets and how much it's allowed to do on its own.</p>
     <div class="steps">
       <div class="step"><b>Research</b><p>Scans companies and roles that fit your search, and maps who's on the team you'd join.</p></div>
       <div class="step"><b>Reach out</b><p>Writes a short, specific note to the right person, grounded only in your real resume.</p></div>
       <div class="step"><b>Keep it going</b><p>Reads replies, drafts answers, follows up once, and knows when to stop.</p></div>
       <div class="step"><b>Apply</b><p>Submits applications with your answers, and tracks every message sent in your name.</p></div>
     </div>
+    <p class="midcta"><a class="btn btn-primary" href="https://buy.stripe.com/fZu7sM0004Gy9yq1jMeIw00">Start 14-day free trial</a></p>
   </div>
 </section>
 
@@ -395,6 +410,7 @@
       <source src="/brand/review-mode.mp4" type="video/mp4">
     </video>
     <p class="src" style="text-align:center;margin-top:10px">Review mode in a real dashboard: read the draft, edit it, approve it. Names and companies blurred.</p>
+    <p class="midcta"><a class="btn btn-primary" href="https://buy.stripe.com/fZu7sM0004Gy9yq1jMeIw00">Start 14-day free trial</a></p>
   </div>
 </section>
 
@@ -408,7 +424,7 @@
       <div class="card"><b>Will my outreach read as AI slop?</b><p>No form letters. Each note is short, written for one person, and built only from what's actually in your resume. It's checked before it goes out so nothing is invented, nobody gets the same message twice, and in Review mode you approve every word.</p></div>
       <div class="card"><b>How is it kept secure?</b><p>Both apps are signed by a verified developer: Apple Developer ID on Mac and Microsoft Trusted Signing on Windows. Your keys sit in your computer's Keychain or Credential Manager, the dashboard only opens on your own computer, and updates install only when you approve them. <a href="/security.html">See how Your Sidedoor protects you</a>.</p></div>
       <div class="card"><b>What do I need?</b><p>A Mac or Windows computer, about 15 minutes, and the accounts the setup guide walks you through, including your own AI model key.</p></div>
-      <div class="card"><b>How much does it cost?</b><p>14 days free with no card needed, then $37 a month if you keep it. Cancel any time from Settings, Manage subscription, in the app; first-month refunds within 14 days, no questions.</p></div>
+      <div class="card"><b>How much does it cost?</b><p>14 days free, then $37 a month if you keep it. Cancel any time from Settings, Manage subscription, in the app; first-month refunds within 14 days, no questions.</p></div>
       <div class="card"><b>Can I see the code?</b><p>Yes. The source is <a href="https://github.com/yoursidedoor/sidedoor">on GitHub</a> under the Business Source License.</p></div>
       <div class="card"><b>Does it guarantee a job?</b><p>No tool can. It gets you in front of the right people faster; the interviews are yours to win.</p></div>
       <div class="card"><b>Can someone help me set up?</b><p>Yes. <a href="https://calendar.app.google/xSR9B8UsznfpNrPP7" target="_blank" rel="noopener">Book a free 30-minute onboarding call</a> and David will walk you through install, keys and your first search.</p></div>
@@ -422,7 +438,7 @@
   <div class="wrap price">
     <div>
       <h2>One plan. Cancel any time.</h2>
-      <p class="sub">Free for 14 days, no card needed. If it doesn't open a door for you, just let the trial end. If you do subscribe, first-month refunds within 14 days, no questions.</p>
+      <p class="sub">Free for 14 days. If it doesn't open a door for you, just let the trial end. If you do subscribe, first-month refunds within 14 days, no questions.</p>
     </div>
     <div class="plan">
       <div class="amt"><s aria-label="Was $44.99">$44.99</s>$37 <small>/ month</small></div>
@@ -434,21 +450,48 @@
         <li>Local dashboard with every message sent</li>
       </ul>
       <a class="btn btn-primary" href="https://buy.stripe.com/fZu7sM0004Gy9yq1jMeIw00">Start 14-day free trial</a>
-      <p class="fine">No card needed to start. You bring your own AI model keys; setup takes about 15 minutes.</p>
+      <p class="fine">You bring your own AI model keys; setup takes about 15 minutes.</p>
     </div>
   </div>
 </section>
 
+<section id="later">
+  <div class="wrap grid2">
+    <div class="card" id="waitlist">
+      <b>Not ready to start a trial?</b>
+      <p>Follow along as Sidedoor grows: short notes on job searching through the side door, and first word when something new ships.</p>
+      <p style="margin-top:12px"><a class="btn btn-ghost" href="https://getyoursidedoor.substack.com/subscribe?utm_source=website&utm_medium=owned&utm_campaign=newsletter">Subscribe to the newsletter</a></p>
+    </div>
+    <div class="card">
+      <b>Want a hand getting set up?</b>
+      <p>Book a free 30-minute onboarding call with David, the engineer who built Your Sidedoor. He'll walk you through install, keys and your first search.</p>
+      <p style="margin-top:12px"><a class="btn btn-ghost" href="https://calendar.app.google/xSR9B8UsznfpNrPP7" target="_blank" rel="noopener">Book an onboarding call</a></p>
+    </div>
+  </div>
+</section>
+
+<div class="sticky" id="sticky" hidden><a class="btn btn-primary" href="https://buy.stripe.com/fZu7sM0004Gy9yq1jMeIw00">Start 14-day free trial</a></div>
+
 <div class="wrap">
   <footer>
     <span>© 2026 Your Sidedoor · Built by David Omofonma</span>
-    <span><a href="/security.html">Security</a> · <a href="/vs-ronin.html">vs Ronin</a> · <a href="/vs-auto-apply.html">vs auto-apply</a> · <a href="https://github.com/yoursidedoor/sidedoor">Source code on GitHub</a> · <a href="https://github.com/yoursidedoor/sidedoor/blob/main/LICENSE">License (BSL 1.1)</a></span>
+    <span><a href="/download.html">Download</a> · <a href="/security.html">Security</a> · <a href="/vs-ronin.html">vs Ronin</a> · <a href="/vs-auto-apply.html">vs auto-apply</a> · <a href="https://github.com/yoursidedoor/sidedoor">Source code on GitHub</a> · <a href="https://github.com/yoursidedoor/sidedoor/blob/main/LICENSE">License (BSL 1.1)</a></span>
     <span><a href="mailto:support@yoursidedoor.com">support@yoursidedoor.com</a></span>
   </footer>
 </div>
   <!-- Cloudflare Web Analytics -->
   <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5bdfa8ad57b84df68e37cffce8a46a9a"}'></script>
   <!-- End Cloudflare Web Analytics -->
+  <script>
+  (function () {
+    var bar = document.getElementById("sticky"), top = document.getElementById("cta-top"), plan = document.querySelector("#pricing .btn-primary");
+    if (!bar || !top || !("IntersectionObserver" in window)) return;
+    var seen = { top: true, plan: false };
+    function set() { bar.hidden = seen.top || seen.plan; }
+    new IntersectionObserver(function (e) { seen.top = e[0].isIntersecting; set(); }).observe(top);
+    if (plan) new IntersectionObserver(function (e) { seen.plan = e[0].isIntersecting; set(); }).observe(plan);
+  })();
+  </script>
   <!-- Pass the visitor's channel (utm_*) through to Stripe so each trial shows where it came from.
        Every Stripe link also gets a client_reference_id that records the click, in the form
        cta_<device>_<page>_<link number>_<utm_source>_<utm_content>_<utm_medium>_<utm_campaign>
