@@ -1,15 +1,15 @@
 {
-  "latest": "0.4.3",
+  "latest": "1.0.0",
   "download_url": "https://yoursidedoor.com/download.html",
-  "notes": "Setup is simpler, with fewer buttons and clearer steps, and Settings now matches it. Your trial length now shows correctly.",
+  "notes": "Sidedoor 1.0.0: Sidedoor now signs in to employer sites for you, or creates the account and confirms it from your mailbox. When a site needs you, or shows a human check, a desktop alert tells you and a card under Needs you lets you do the step right there. One LinkedIn sign-in now covers contacts and outreach. Approvals can be filtered by label, and there is a new Metrics tab.",
   "mac": {
     "arm64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.4.3/Sidedoor-mac-apple-silicon.zip",
-      "sha256": "aac5886eda7a37d36162911c68c1d5b504d4ee1651f48d2080b90ed6108f00a6"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v1.0.0/Sidedoor-mac-apple-silicon.zip",
+      "sha256": "0ea97b5559cdfba383c0f2b8d9ad0b2ce326ad401777eaad905cf2906e975569"
     },
     "x86_64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v0.4.3/Sidedoor-mac-intel.zip",
-      "sha256": "54cb8fa0510f7cfd040c64638a8d78f52bdb45b91844e49a27aafe8eb38e9b94"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v1.0.0/Sidedoor-mac-intel.zip",
+      "sha256": "013f30c835a99d0f1df2516730806ac9dd8577ad8b90d5b579c45da61342c706"
     }
   }
 }
