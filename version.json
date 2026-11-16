@@ -1,15 +1,15 @@
 {
-  "latest": "1.0.1",
+  "latest": "1.0.2",
   "download_url": "https://yoursidedoor.com/download.html",
-  "notes": "Sidedoor 1.0.1: a job whose posting has closed now closes and tells you why, and a job that is waiting for you has an Abandon button. If a site shows you already applied, Sidedoor closes the job and does not apply again. Updating on a Mac no longer waits on other programs.",
+  "notes": "Sidedoor 1.0.2: your level, work mode and place picks are now limits, and roles already found are checked again when you change them. The ATS version of your résumé keeps every link from your file, written out and clickable. A note you rejected is no longer checked again.",
   "mac": {
     "arm64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v1.0.1/Sidedoor-mac-apple-silicon.zip",
-      "sha256": "267c2947f0de178ee4a2533380f0e66f38568a378520e7f24d192e6350e08f44"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v1.0.2/Sidedoor-mac-apple-silicon.zip",
+      "sha256": "a46928c86c408f0223f77dc54b314ccc0931285d67d9fc335b32faa8cc35e0cc"
     },
     "x86_64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v1.0.1/Sidedoor-mac-intel.zip",
-      "sha256": "9a6982c8d7f96bc1599e7fb61ef40f6582bb8b6310ba53814471a9a90098a41a"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v1.0.2/Sidedoor-mac-intel.zip",
+      "sha256": "f4315e3d37f4371b228217503086d41017fec33ad8546c013562374a4c4c7733"
     }
   }
 }
