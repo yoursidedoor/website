@@ -1,15 +1,15 @@
 {
-  "latest": "1.0.3",
+  "latest": "1.0.4",
   "download_url": "https://yoursidedoor.com/download.html",
-  "notes": "Sidedoor 1.0.3: you can abandon any open application, your résumé is attached whatever the form calls its upload, and a form that needs another document asks you for the file.",
+  "notes": "Sidedoor 1.0.4: research carries on after your computer sleeps, unused time goes back into your daily allowance, and you can download each log and report by name and date for support.",
   "mac": {
     "arm64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v1.0.3/Sidedoor-mac-apple-silicon.zip",
-      "sha256": "39d9a8f360993d3c174c9c83b8e060586b9bed058a6c61ba304b71b4efe2c611"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v1.0.4/Sidedoor-mac-apple-silicon.zip",
+      "sha256": "c3715247828c09a5ea7d7dcf772f2873a2cdee0955f0771db072633843aaebbb"
     },
     "x86_64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v1.0.3/Sidedoor-mac-intel.zip",
-      "sha256": "6d1954e3471359ef0b188bf6337eaf4b0319a3a635a11f28ec476217c6ad7f45"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v1.0.4/Sidedoor-mac-intel.zip",
+      "sha256": "3be20674761be13403950e56cd029a5fed8caa0e8b544444932a0d627017cf07"
     }
   }
 }
