@@ -1,15 +1,15 @@
 {
-  "latest": "1.0.4",
+  "latest": "1.0.5",
   "download_url": "https://yoursidedoor.com/download.html",
-  "notes": "Sidedoor 1.0.4: research carries on after your computer sleeps, unused time goes back into your daily allowance, and you can download each log and report by name and date for support.",
+  "notes": "Sidedoor 1.0.5: a card tells you when your mailbox needs a sign-in, employer replies confirm your applications, and Failures and logs lists one row per thing Sidedoor did, with search.",
   "mac": {
     "arm64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v1.0.4/Sidedoor-mac-apple-silicon.zip",
-      "sha256": "c3715247828c09a5ea7d7dcf772f2873a2cdee0955f0771db072633843aaebbb"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v1.0.5/Sidedoor-mac-apple-silicon.zip",
+      "sha256": "0f01c7e4a3709da8d583deffd2de5fc480a96922a2580eebb0eec5034ed368e6"
     },
     "x86_64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v1.0.4/Sidedoor-mac-intel.zip",
-      "sha256": "3be20674761be13403950e56cd029a5fed8caa0e8b544444932a0d627017cf07"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v1.0.5/Sidedoor-mac-intel.zip",
+      "sha256": "642b78d6b1537f63d76720969190ec318fdd4f7ee5781dfbb3ea92e9df2dcc16"
     }
   }
 }
