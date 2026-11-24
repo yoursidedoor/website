@@ -1,15 +1,15 @@
 {
-  "latest": "1.0.5",
+  "latest": "1.0.6",
   "download_url": "https://yoursidedoor.com/download.html",
-  "notes": "Sidedoor 1.0.5: a card tells you when your mailbox needs a sign-in, employer replies confirm your applications, and Failures and logs lists one row per thing Sidedoor did, with search.",
+  "notes": "Sidedoor 1.0.6: replies no longer get stuck on small details of the AI's answer, and an offer to pass you on gets a short thank-you.",
   "mac": {
     "arm64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v1.0.5/Sidedoor-mac-apple-silicon.zip",
-      "sha256": "0f01c7e4a3709da8d583deffd2de5fc480a96922a2580eebb0eec5034ed368e6"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v1.0.6/Sidedoor-mac-apple-silicon.zip",
+      "sha256": "b06dac041406236d3da560cb576e6f3b9fedf22960e077e02ce0bf274ff8f884"
     },
     "x86_64": {
-      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v1.0.5/Sidedoor-mac-intel.zip",
-      "sha256": "642b78d6b1537f63d76720969190ec318fdd4f7ee5781dfbb3ea92e9df2dcc16"
+      "url": "https://github.com/yoursidedoor/sidedoor/releases/download/v1.0.6/Sidedoor-mac-intel.zip",
+      "sha256": "015a72f23db65f8f0e1f0ad550dc30f1da1b365a7906dd2f60876d60004fbb33"
     }
   }
 }
